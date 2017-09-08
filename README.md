@@ -76,5 +76,5 @@ Adds a super cool feature
 Closes #1
 ````
 
-After this, deploy your change to runrunitstg as discussed below.
+After this, deploy your change to parking_a_lot:stg as discussed below.
 
