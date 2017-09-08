@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  spot_id: MyString
+  spot_floor: MyString
+  string: MyString
+  spot_description: MyString
+  text: MyString
+
+two:
+  spot_id: MyString
+  spot_floor: MyString
+  string: MyString
+  spot_description: MyString
+  text: MyString
