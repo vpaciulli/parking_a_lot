@@ -1,5 +1,3 @@
 class ParkingSpot < ApplicationRecord
-  validates :spot_id, presence: true  
-  validates :spot_floor, presence: true
-  validates :spot_description, presence: true
+  validates_presence_of(:spot_id, :spot_floor, :spot_description)
 end
