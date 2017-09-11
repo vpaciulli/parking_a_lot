@@ -1,0 +1,18 @@
+<h1>Lista de suas Vagas</h1>
+<table>
+  <%= link_to 'New Parking Spot', new_parking_spot_path %>
+  <tr>
+    <th>Identificação da Vaga:</th>
+    <th>Andar da Vaga:</th>
+    <th>Descrição da Vaga:</th>
+  </tr>
+
+  <% @parking_spots.each do |parking_spot| %>
+    <tr>
+      <td><%= parking_spot.spot_id %></td>
+      <td><%= parking_spot.spot_floor %></td>
+      <td><%= parking_spot.spot_description %></td>
+      <td><%= link_to 'Show', parking_spot_path(parking_spot) %></td>
+    </tr>
+  <% end %>
+</table>
