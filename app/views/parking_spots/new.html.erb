@@ -1,0 +1,36 @@
+<h4>Insira aqui os dados da Vaga de seu Estacionamento</h4>
+
+<%= form_with scope: :parking_spots, url: parking_spots_path, local: true do |form| %>
+  <% if @parking_spot.errors.any? %>
+    <div id="error_explanation">
+      <h2>
+        <%= pluralize(@parking_spot.errors.count, "error") %> prohibited
+        this parking_spot from being saved:
+      </h2>
+      <ul>
+        <% @parking_spot.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <p>
+    <%= form.label 'Identificação da Vaga:' %><br>
+    <%= form.text_field :spot_id %>
+  </p>
+
+  <p>
+    <%= form.label 'Andar da Vaga:' %><br>
+    <%= form.text_field :spot_floor %>
+  </p>
+
+  <p>
+    <%= form.label 'Descrição da Vaga:' %><br>
+    <%= form.text_area :spot_description %>
+  </p>
+
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>

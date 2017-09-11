@@ -1,3 +1,7 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  get 'parking_spots/index'
+
+  resources :parking_spots
+
+  root 'parking_spots#index'
 end
