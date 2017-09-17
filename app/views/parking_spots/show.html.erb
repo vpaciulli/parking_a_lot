@@ -1,16 +1,17 @@
-<p>
+<h1> Vaga </h1>
+<div class="ui secondary segment">
   <strong>Identificação da Vaga:</strong>
   <%= @parking_spot.spot_id %>
-</p>
+</div>
 
-<p>
+<div class="ui secondary segment">
   <strong>Andar da Vaga:</strong>
   <%= @parking_spot.spot_floor %>
-</p>
+</div>
 
-<p>
+<div class="ui secondary segment">
   <strong>Descrição da Vaga:</strong>
   <%= @parking_spot.spot_description %>
-</p>
+</div>
 
-<%= link_to 'Back', parking_spots_path %>
+<%= link_to 'Back', parking_spots_path,class: 'ui icon button'%>

@@ -1,6 +1,6 @@
 <h1>Lista de suas Vagas</h1>
-<table>
-  <%= link_to 'New Parking Spot', new_parking_spot_path %>
+<table class="ui orange table">
+  <%= link_to 'New Parking Spot', new_parking_spot_path,class: 'ui icon button'%>
   <tr>
     <th>Identificação da Vaga:</th>
     <th>Andar da Vaga:</th>
@@ -9,10 +9,10 @@
 
   <% @parking_spots.each do |parking_spot| %>
     <tr>
-      <td><%= parking_spot.spot_id %></td>
-      <td><%= parking_spot.spot_floor %></td>
-      <td><%= parking_spot.spot_description %></td>
-      <td><%= link_to 'Show', parking_spot_path(parking_spot) %></td>
+      <td class="left aligned" style="width: 200px"><%= parking_spot.spot_id %></td>
+      <td class="left aligned" style="width: 200px"><%= parking_spot.spot_floor %></td>
+      <td class="left aligned" style="width: 200px"><%= parking_spot.spot_description %></td>
+      <td class="left aligned" style="width: 200px"><%= link_to 'Show', parking_spot_path(parking_spot),class: 'ui icon button'%></td>
     </tr>
   <% end %>
 </table>
