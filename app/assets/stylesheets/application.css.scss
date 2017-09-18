@@ -14,3 +14,17 @@
  *= require_self
  */
  @import "semantic-ui";
+
+ $color_1: #fff;
+ $background_color_1: transparent;
+
+ .navbar {
+ 	a.brand {
+ 		font-size: 18px;
+ 		&:hover {
+ 			color: $color_1;
+ 			background-color: $background_color_1;
+ 			text-decoration: none;
+ 		}
+ 	}
+ }
