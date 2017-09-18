@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'parking_spots/index'
+  devise_for :users
 
   resources :parking_spots
 
