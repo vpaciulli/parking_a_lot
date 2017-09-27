@@ -6,11 +6,8 @@ Rails.application.routes.draw do
   root 'parking_spots#index'
 
   namespace :api, defaults: { format: :json } do
-  	get 'list', to: 'api#list_all'
 
-  	get 'show_spot/:id', to: 'api#show_spot'
-
-  	get 'create', to: 'api#create_spot'
+  	put 'status', to: 'api#change_status'
 
   end
 end
