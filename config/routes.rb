@@ -8,7 +8,6 @@ Rails.application.routes.draw do
   namespace :api, defaults: { format: :json } do
 
   	put 'status', to: 'api#change_status'
-    get 'list', to: 'api#list'
 
   end
 end
